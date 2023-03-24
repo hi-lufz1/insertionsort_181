@@ -48,6 +48,8 @@ void insertionsort() { //procedure insertionsort
             arr[j + 1] = arr[j];                                  //4a. simpan arr[j] ke dalam variabel arr[j+]
             j--;                                                  //4b. decrement nilai j by 1
         }
+        
+        arr[j + 1] = temp;                                       //5. simpan nilai temp ke dalam arr[j+1]
     
     
     
