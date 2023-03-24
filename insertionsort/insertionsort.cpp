@@ -37,22 +37,24 @@ void insertionsort() { //procedure insertionsort
     int j;      // Membuat variabel j sebagai penanda
 
     for (int i = 1; i < n; i++) {                                   // 1. Looping dengan i dimulai dari 1 hingga n-1
- 
+
         temp = arr[i];                                              // 2. Simpan nilai arr[i] ke variabel sementara temp
 
         j = i - 1;                                                 // 3. Setting nilai j sama dengan i-1;
 
         while (j >= 0 && arr[j] > temp)                            //4. Looping while dimana nilai j lebih besar sama dengan 0 dan
-                                                                   // arr[j] lebih besar daripada temp
+            // arr[j] lebih besar daripada temp
         {
             arr[j + 1] = arr[j];                                  //4a. simpan arr[j] ke dalam variabel arr[j+]
             j--;                                                  //4b. decrement nilai j by 1
         }
-        
+
         arr[j + 1] = temp;                                       //5. simpan nilai temp ke dalam arr[j+1]
-    
-    
-    
-    
-    
+
+
+        cout << "\nPass " << i << ": ";                                 // Output ke layar
+        for (int k = 0; k < n; k++) {                                  // looping nilai k dimulai dari 0 hingga n-1
+            cout << arr[k] << " ";                                     // Output ke layar
+        }
     }
+}
